@@ -57,7 +57,7 @@ export default function ProjectsPage() {
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {Array.isArray(project.technologies) && project.technologies.length > 0 ? (
-                        project.technologies.map((tech: string) => (
+                        project.technologies.map((tech) => (
                           <span 
                             key={tech} 
                             className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs rounded-full text-gray-700 dark:text-gray-300"
