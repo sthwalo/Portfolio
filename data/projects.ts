@@ -283,3 +283,26 @@ export const projects: Project[] = [
     }
   }
 ];
+
+export const achievements = [
+  {
+    id: "linux-auth",
+    title: "Linux Authorization & Security Management",
+    description: "Completed practical training in Linux security administration, focusing on file system permissions and access control.",
+    skills: [
+      "File & Directory Permissions Management",
+      "Linux Bash Shell Commands",
+      "Security Authorization",
+      "Access Control Implementation"
+    ],
+    keyLearnings: [
+      "Examining file and directory permissions",
+      "Modifying file access controls",
+      "Directory permission management",
+      "Linux security best practices"
+    ],
+    date: "2024", // Adjust the date as needed
+    type: "Technical Achievement"
+  }
+  // ... other achievements
+];
