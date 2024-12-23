@@ -11,10 +11,10 @@ const Navigation = () => (
           <Link href="/" className="text-white">Home</Link>
         </li>
         <li>
-          <Link href="/projects" className="text-white">Projects</Link>
+          <Link href="/projects" className="text-white">Cybersecurity</Link>
         </li>
         <li>
-          <Link href="/about" className="text-white">About</Link>
+          <Link href="/projects" className="text-white">Software Engineering</Link>
         </li>
         {/* Add more links as needed */}
       </ul>
@@ -33,7 +33,7 @@ export default function ProjectsPage() {
           transition={{ duration: 0.5 }}
           className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white"
         >
-          My Cybersecurity Projects
+         Cybersecurity
         </motion.h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -57,14 +57,23 @@ export default function ProjectsPage() {
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {Array.isArray(project.technologies) && project.technologies.length > 0 ? (
-                        project.technologies.map((tech) => (
+                        typeof project.technologies === 'function' ? project.technologies().map((tech) => (
                           <span 
                             key={tech} 
                             className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs rounded-full text-gray-700 dark:text-gray-300"
                           >
                             {tech}
                           </span>
-                        ))
+                        )) : (
+                          project.technologies.map((tech) => (
+                            <span 
+                              key={tech} 
+                              className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs rounded-full text-gray-700 dark:text-gray-300"
+                            >
+                              {tech}
+                            </span>
+                          ))
+                        )
                       ) : (
                         <span className="text-gray-500 dark:text-gray-400">No technologies listed.</span>
                       )}

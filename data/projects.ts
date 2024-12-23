@@ -16,7 +16,7 @@ interface Documentation {
 }
 
 export interface Project {
-  technologies(technologies: any): unknown;
+  technologies: string[];
   id: number;
   title: string;
   description: string;
@@ -82,9 +82,7 @@ export const projects: Project[] = [
         description: "Full professional statement with career objectives"
       }
     ],
-    technologies: function (technologies: any): unknown {
-      throw new Error("Function not implemented.");
-    }
+    technologies: ["Security Assessment", "Risk Analysis", "Compliance", "Documentation"],
   },
   {
     id: 2,
@@ -156,9 +154,7 @@ export const projects: Project[] = [
         description: "Detailed assessment of security controls"
       }
     ],
-    technologies: function (technologies: any): unknown {
-      throw new Error("Function not implemented.");
-    }
+    technologies: ["Network Security", "Threat Analysis", "Security Architecture", "Security Compliance"],
   },
   {
     id: 3,
@@ -220,9 +216,7 @@ export const projects: Project[] = [
         description: "Complete network security assessment"
       }
     ],
-    technologies: function (technologies: any): unknown {
-      throw new Error("Function not implemented.");
-    }
+    technologies: ["Linux File Permissions", "File Permissions Management", "Linux Security", "Linux Command Line"],
   },
   {
     id: 4,
@@ -256,9 +250,7 @@ export const projects: Project[] = [
         description: "Comprehensive guide to Linux file permissions"
       }
     ],
-    technologies: function (technologies: any): unknown {
-      throw new Error("Function not implemented.");
-    }
+    technologies: ["Linux File Permissions", "File Permissions Management", "Linux Security", "Linux Command Line"],
   },
   {
     id: 5,
@@ -278,9 +270,7 @@ export const projects: Project[] = [
         description: "Collection of SQL queries for security analysis"
       }
     ],
-    technologies: function (technologies: any): unknown {
-      throw new Error("Function not implemented.");
-    }
+    technologies: ["SQL", "Data Analysis", "Security Monitoring"],
   }
 ];
 

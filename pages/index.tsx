@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     <div className="min-h-screen bg-black text-white">
       <Head>
         <title>Immaculate Nyoni - Cybersecurity Professional</title>
-        <meta name="description" content="Portfolio of Immaculate Nyoni - Cybersecurity Professional and Backend Engineer specializing in secure system architecture and cryptography" />
+        <meta name="description" content="Portfolio of Immaculate Nyoni - Cybersecurity Professional and Software Engineer specializing in secure system architecture and cryptography" />
         <meta name="keywords" content="cybersecurity, backend engineering, cryptography, secure systems, portfolio" />
         <meta name="author" content="Immaculate Nyoni" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
