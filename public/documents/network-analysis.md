@@ -1,7 +1,7 @@
 # Network Security Analysis Report
 
 ## Overview
-This analysis examines the network architecture and security implementations of [Organization Name], focusing on identifying potential vulnerabilities and recommending security improvements.
+This analysis examines the network architecture and security implementations, focusing on identifying potential vulnerabilities and recommending security improvements.
 
 ## Network Architecture
 - Network Topology

@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { projects } from '../../data/projects';
@@ -57,25 +57,16 @@ export default function ProjectsPage() {
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {Array.isArray(project.technologies) && project.technologies.length > 0 ? (
-                        typeof project.technologies === 'function' ? project.technologies().map((tech) => (
+                        project.technologies.map((tech) => (
                           <span 
                             key={tech} 
                             className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs rounded-full text-gray-700 dark:text-gray-300"
                           >
                             {tech}
                           </span>
-                        )) : (
-                          project.technologies.map((tech) => (
-                            <span 
-                              key={tech} 
-                              className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs rounded-full text-gray-700 dark:text-gray-300"
-                            >
-                              {tech}
-                            </span>
-                          ))
-                        )
+                        ))
                       ) : (
-                        <span className="text-gray-500 dark:text-gray-400">No technologies listed.</span>
+                        <span className="text-gray-500 dark:text-gray-400">No technologies listed</span>
                       )}
                     </div>
                     <div className="text-sm text-gray-500 dark:text-gray-400 flex items-center">
